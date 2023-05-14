@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Deez_nuts</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="flat,750x,075,f-pad,750x1000,f8f8f8.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\TUF Gaming\Desktop\MainWindow.xaml" Link="MainWindow.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="flat,750x,075,f-pad,750x1000,f8f8f8.jpg" />
+  </ItemGroup>
+
+</Project>

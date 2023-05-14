@@ -1,0 +1,44 @@
+﻿<Window x:Class="Deez_nuts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deez_nuts"
+        mc:Ignorable="d"
+        Title="Amogus" Height="450" Width="800">
+    <Canvas>
+        <Rectangle Height="434" Stroke="Black" Width="800" Fill="Black"/>
+        <Rectangle Height="55" Stroke="Black" Width="800" Fill="White"/>
+        <Rectangle Height="395" Stroke="White" Canvas.Top="41" Width="38" RenderTransformOrigin="0.5,0.5" Fill="White">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.43"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="16" Canvas.Left="30" Stroke="White" Canvas.Top="408" Width="770" Fill="White"/>
+        <Rectangle Height="394" Stroke="White" Width="19" Canvas.Left="771" Canvas.Top="40" Fill="White"/>
+        <Button Content="Отличники" Canvas.Left="191" Canvas.Top="92" Height="36" Width="418" Background="#FF98FB8E" Click="Button_Click" FontSize="20" FontFamily="Comic Sans MS"/>
+        <Button Content="Хорошисты" Canvas.Left="191" Canvas.Top="181" Height="36" Width="418" Background="#FFFFF63B" FontSize="20" FontFamily="Comic Sans MS" Click="Button_Click_1"/>
+        <Button Content="Троечники" Canvas.Left="191" Canvas.Top="269" Height="36" Width="418" Background="#FFFF8B00" FontSize="20" FontFamily="Comic Sans MS" Click="Button_Click_2"/>
+        <Button Content="На отчисление" Canvas.Left="191" Canvas.Top="356" Height="36" Width="418" Background="#FFFF1818" FontSize="20" FontFamily="Comic Sans MS" Click="Button_Click_3"/>
+        <Label Content="Распределение степендии" Height="69" Canvas.Left="158" Canvas.Top="-14" Width="602" Background="#00000000" FontSize="40" FontFamily="Comic Sans MS"/>
+
+
+        <Grid Name ="InfoGrid" Height="337" Width="715" Canvas.Left="45" Canvas.Top="55">
+            <Label Name ="MainTxt" Height="343" Width="716" Canvas.Left="42" FontWeight="Bold" Background="Black" Foreground="White" MouseLeftButtonDown="Back" Canvas.Top="60" Margin="0,10,-10,-20"/>
+
+
+            <TextBox Name ="InformationAdd"  Text="" TextWrapping="Wrap" Margin="10,253,10,0"/>
+            <Button Name="AddButton" Content="Добавить" Margin="548,214,10,89" Click="AddButton_Click"/>
+        </Grid>
+
+
+        <Button/>
+
+    </Canvas>
+</Window>
+
